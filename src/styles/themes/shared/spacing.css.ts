@@ -1,4 +1,4 @@
-import { BASE_SPACING } from "./constants";
+import { BASE_SPACING } from "./constants.css";
 
 export const spacing = {
   xxxs: `${0.5 * BASE_SPACING}rem`, //    2px    0.125rem

@@ -1,13 +1,12 @@
 import type { Preview } from "@storybook/react-webpack5";
 
 import { useEffect } from "react";
-import {
-  blueTheme,
-  blueThemeDark,
-  redTheme,
-  redThemeDark,
-  themeVars,
-} from "../src/styles/themes";
+import { blueTheme, blueThemeDark } from "../src/styles/themes/blue.css";
+import { redTheme, redThemeDark } from "../src/styles/themes/red.css";
+import { themeVars } from "../src/styles/themes/theme.css";
+
+// IMPORTANT: Import the new global style file
+import "../src/styles/globalTheme.css";
 
 // Define the theme map
 const THEME_MAP = {
@@ -64,10 +63,10 @@ const preview: Preview = {
       const themeClass = THEME_MAP[theme]?.[mode] || blueTheme;
       const backgroundColor =
         theme === "blue" && mode === "dark"
-          ? themeVars.colors.background.body
+          ? themeVars.semanticColors.bg
           : theme === "red" && mode === "dark"
-            ? themeVars.colors.background.body
-            : themeVars.colors.background.body;
+            ? themeVars.semanticColors.bg
+            : themeVars.semanticColors.bg;
 
       useEffect(() => {
         // This adds the theme class to the Storybook Docs page <html> element
@@ -82,7 +81,6 @@ const preview: Preview = {
           className={themeClass}
           style={{
             backgroundColor: backgroundColor,
-            padding: "2rem",
             minHeight: "100vh",
           }}
         >

@@ -1,6 +1,6 @@
 import { createTheme } from "@vanilla-extract/css";
 import { themeContract } from "./theme.css";
-import { colors as sharedColors } from "./shared";
+import { colors as sharedColors } from "./shared/index.css";
 
 export const blueTheme = createTheme(themeContract, {
   colors: {
@@ -9,29 +9,23 @@ export const blueTheme = createTheme(themeContract, {
       secondary: "#002244",
       accent: "#A5ACAF",
     },
-    background: {
-      body: sharedColors.white,
-    },
-    text: {
-      primary: sharedColors.black,
-      inverted: sharedColors.white,
-    },
+    ...sharedColors,
+  },
+  semanticColors: {
+    bg: sharedColors.white,
   },
 });
 
 export const blueThemeDark = createTheme(themeContract, {
   colors: {
     brand: {
-      primary: "#78D82A",
-      secondary: "#003366",
-      accent: "#B5BCBF",
+      primary: "#69BE28",
+      secondary: "#002244",
+      accent: "#A5ACAF",
     },
-    background: {
-      body: "#1a1a1a",
-    },
-    text: {
-      primary: sharedColors.grey[100],
-      inverted: sharedColors.black,
-    },
+    ...sharedColors,
+  },
+  semanticColors: {
+    bg: sharedColors.black,
   },
 });

@@ -1,5 +1,9 @@
 import { createThemeContract } from "@vanilla-extract/css";
-import { colors as sharedColors, spacing as sharedSpacing } from "./shared";
+import {
+  colors as sharedColors,
+  spacing as sharedSpacing,
+  fontSizes as sharedFontSizes,
+} from "./shared/index.css";
 
 export const themeContract = createThemeContract({
   colors: {
@@ -8,20 +12,30 @@ export const themeContract = createThemeContract({
       secondary: null,
       accent: null,
     },
-    background: {
-      body: null,
+    transparent: null,
+    white: null,
+    black: null,
+    grey: {
+      50: null,
+      100: null,
+      200: null,
+      300: null,
+      400: null,
+      500: null,
+      600: null,
+      700: null,
+      800: null,
+      900: null,
     },
-    text: {
-      primary: null,
-      inverted: null,
-    },
+  },
+  semanticColors: {
+    bg: null,
   },
 });
 
 export const themeVars = {
   ...themeContract,
-  shared: {
-    colors: sharedColors,
-    spacing: sharedSpacing,
-  },
+  colors: { ...themeContract.colors, ...sharedColors },
+  spacing: sharedSpacing,
+  fontSizes: sharedFontSizes,
 };
