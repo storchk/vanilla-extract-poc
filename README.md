@@ -11,7 +11,7 @@ This repository demonstrates a **Proof of Concept (PoC)** for integrating **🧁
 ## Features
 
 1. **React Component with Dynamic Styling**  
-   Includes a `Button` component styled dynamically based on props such as `variant` (e.g., primary, secondary, tertiary) and integrates with the 🐼 Panda theme for consistent styling.
+   Includes a `Button` component styled dynamically based on props such as `variant` (e.g., primary, secondary, tertiary) and integrates with the 🧁 Vanilla Extract theme for consistent styling.
 
 2. **Theming with 🧁 Vanilla Extract**  
    Demonstrates how to define a custom theme in 🧁 Vanilla Extract and apply it globally across components.
