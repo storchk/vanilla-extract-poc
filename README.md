@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7d836e3e-c4fa-460d-8559-f056f122332e/deploy-status)](https://app.netlify.com/projects/beamish-mermaid-bc400e/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49a79160-2218-407b-b178-b05b19930050/deploy-status)](https://app.netlify.com/projects/bucolic-kheer-f91cb4/deploys)
 
 # 🧁 Vanilla Extract - Proof of Concept
 
