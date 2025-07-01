@@ -33,7 +33,7 @@ export const themeContract = createThemeContract({
   },
 });
 
-export const themeVars = {
+export const tokens = {
   ...themeContract,
   colors: { ...themeContract.colors, ...sharedColors },
   spacing: sharedSpacing,

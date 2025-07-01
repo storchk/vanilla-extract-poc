@@ -1,11 +1,11 @@
-import { themeVars } from "../../styles/themes/theme.css";
+import { tokens } from "../../styles/themes/theme.css";
 import { recipe } from "@vanilla-extract/recipes";
 
 export const buttonStyle = recipe({
   base: {
     borderWidth: "0.125rem",
     borderStyle: "solid",
-    fontSize: `${themeVars.fontSizes.md}`,
+    fontSize: `${tokens.fontSizes.md}`,
     ":hover": {
       cursor: "pointer",
     },
@@ -14,54 +14,54 @@ export const buttonStyle = recipe({
   variants: {
     variant: {
       primary: {
-        backgroundColor: `${themeVars.colors.brand.primary}`,
-        borderColor: `${themeVars.colors.brand.primary}`,
+        backgroundColor: `${tokens.colors.brand.primary}`,
+        borderColor: `${tokens.colors.brand.primary}`,
 
-        color: `${themeVars.colors.white}`,
+        color: `${tokens.colors.white}`,
 
         ":hover": {
-          backgroundColor: `${themeVars.colors.brand.secondary}`,
-          borderColor: `${themeVars.colors.brand.secondary}`,
+          backgroundColor: `${tokens.colors.brand.secondary}`,
+          borderColor: `${tokens.colors.brand.secondary}`,
         },
       },
       secondary: {
-        backgroundColor: `${themeVars.colors.brand.secondary}`,
-        borderColor: `${themeVars.colors.brand.secondary}`,
+        backgroundColor: `${tokens.colors.brand.secondary}`,
+        borderColor: `${tokens.colors.brand.secondary}`,
 
-        color: `${themeVars.colors.white}`,
+        color: `${tokens.colors.white}`,
 
         ":hover": {
-          backgroundColor: `${themeVars.colors.brand.primary}`,
-          borderColor: `${themeVars.colors.brand.primary}`,
+          backgroundColor: `${tokens.colors.brand.primary}`,
+          borderColor: `${tokens.colors.brand.primary}`,
         },
       },
       tertiary: {
-        backgroundColor: `${themeVars.colors.grey[800]}`,
-        color: `${themeVars.colors.grey[200]}`,
-        borderColor: `${themeVars.colors.grey[800]}`,
+        backgroundColor: `${tokens.colors.grey[800]}`,
+        color: `${tokens.colors.grey[200]}`,
+        borderColor: `${tokens.colors.grey[800]}`,
         ":hover": {
-          backgroundColor: `${themeVars.colors.transparent}`,
-          borderColor: `${themeVars.colors.grey[800]}`,
-          color: `${themeVars.colors.grey[200]}`,
+          backgroundColor: `${tokens.colors.transparent}`,
+          borderColor: `${tokens.colors.grey[800]}`,
+          color: `${tokens.colors.grey[200]}`,
         },
       },
     },
     size: {
       extraSmall: {
-        paddingBlock: `${themeVars.spacing.xxs}`,
-        paddingInline: `${themeVars.spacing.sm}`,
+        paddingBlock: `${tokens.spacing.xxs}`,
+        paddingInline: `${tokens.spacing.sm}`,
       },
       small: {
-        paddingBlock: `${themeVars.spacing.xs}`,
-        paddingInline: `${themeVars.spacing.sm}`,
+        paddingBlock: `${tokens.spacing.xs}`,
+        paddingInline: `${tokens.spacing.sm}`,
       },
       medium: {
-        paddingBlock: `${themeVars.spacing.sm}`,
-        paddingInline: `${themeVars.spacing.md}`,
+        paddingBlock: `${tokens.spacing.sm}`,
+        paddingInline: `${tokens.spacing.md}`,
       },
       large: {
-        paddingBlock: `${themeVars.spacing.md}`,
-        paddingInline: `${themeVars.spacing.lg}`,
+        paddingBlock: `${tokens.spacing.md}`,
+        paddingInline: `${tokens.spacing.lg}`,
       },
     },
   },
